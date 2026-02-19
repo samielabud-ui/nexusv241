@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexusBQ | Medicina PBL</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              nexus: {
+                bg: '#111315',       // Fundo grafite escuro e neutro (não azulado)
+                surface: '#181A1F',  // Superfície secundária sutilmente mais clara
+                card: '#1D2026',     // Fundo dos cards elegante
+                hover: '#252830',    // Cor de hover suave
+                border: '#2E323A',   // Bordas finas e sutis
+                blue: '#38BDF8',     // Azul clínico para ações
+                green: '#4ADE80',    // Verde saúde para progresso
+                purple: '#A78BFA',   // Roxo para PBL
+                orange: '#FBBF24',   // Laranja para foco/alertas
+                text: {
+                  title: '#F9FAFB',  // Textos primários quase brancos
+                  main: '#D1D5DB',   // Texto de leitura (cinza claro)
+                  sec: '#9CA3AF',    // Texto secundário (cinza médio)
+                  label: '#6B7280'   // Labels e textos pequenos
+                }
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://unpkg.com/pdf-lib@1.17.1/dist/pdf-lib.min.js"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        .pdf-content {
+            background-color: #111315 !important;
+            color: #D1D5DB !important;
+        }
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.41.0"
+  }
+}
+</script>
+</head>
+<body class="bg-neutral-50 dark:bg-nexus-bg text-neutral-900 dark:text-nexus-text-main">
+    <div id="root"></div>
+</body>
+</html>
